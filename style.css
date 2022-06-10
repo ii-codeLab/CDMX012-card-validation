@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+ body {
+   width: 100%;
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+header {
+    width: 100%;
+    height: 70px;
+    background: rgb(209, 9, 149);
+    margin: auto;
+}
+.ancho{
+    width: 80%;
+    height: 70px; 
+}
+.logo{
+    width: 40%;
+    height: 70px;
+    float: left;
+    padding-top: 15px;
+    box-sizing: border-box;
+}
+.logo p a{
+    color:#ffffff;
+    font-size: 30px;
+    text-decoration: none;
+}
+.logo p{
+    color:#ffffff;
+    font-size: 15px;
+    text-decoration: none;
+}
+h1{
+    color: rgb(53, 53, 53);
+    font-size: 25px;
+    font-weight: normal;
+    margin-top: 180px;
+    text-align: center;
+}
+.center {
+    width: 100%;
+    height: 50px;
+    max-width: 250px;
+    position: relative;
+    overflow: hidden;
+}
+.center input{
+    width: 100%;
+    height: 100%;
+    background: none;
+    color: rgb(53, 53, 53);
+    padding-top: 20px;
+    border: none;
+    outline: 0px;
+}
+.center .numTarjeta{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 2px solid rgb(209, 9, 149);
+}
+.center .numTarjeta:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid rgb(209, 9, 149);
+    transform: translate(-100%);
+    transition: all 0.3s ease;
+}
+.text-tarjeta{
+    position: absolute;
+    margin-top: 50px;
+    bottom: 5px;
+    left: 0;
+    transition: all 0.3s ease;
+    color: rgb(209, 9, 149);
+}
+.center input:focus + .numTarjeta .text-tarjeta, .center input:valid + .numTarjeta .text-tarjeta{
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: rgb(209, 9, 149);
+}
+#validText {
+    margin-top: 5px;
+    font-size: 14px;
+    color: rgb(53, 53, 53);
+}
+.button {
+    /*margin-left: 550px;
+    margin-right: 550px;*/
+    margin-bottom: 150px;
+    background-color: rgb(209, 9, 149);
+    border: none;
+    color: white;
+    padding: 15px 110px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 1.5mm;
+}
+
+footer{
+    width: 100%;
+    background-color: rgb(53, 53, 53);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+}
+.liga a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;  
+    font-size: 18px;
+}
+ 

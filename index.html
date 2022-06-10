@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Validar tarjeta Liverpool</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="ancho">
+      <div class="logo"><!--esta clase es para manejar un recuadro donde está el logo-->
+        <p><a href="https://www.liverpool.com.mx/tienda/home">Liverpool</a>
+    es parte de mi vida </p>   
+    </div>
+  </div>
+  </header>
+
+    <!-- INFORMACIÓN PARA INICIO DE SESIÓN-->
+    <h1>¡Bienvenido!</h1>
+    <div class="center">
+      <input type="text" id="nTarjeta"  required minlength="13" maxlength="16" size="18">
+      <label class="numTarjeta">
+        <span class="text-tarjeta">
+         Número de Tarjeta
+        </span>
+      </label>
+    </div>
+    <div id="validText"></div>
+    <input type="submit" value="Validar" class="button" id="validar">
+    <footer>
+      <div class="liga">
+      <a href="https://www.liverpool.com.mx/tienda/home">Liverpool</a><br>
+      ii.labcode<br>
+      Proyect #1
+      </div>
+    </footer>
+
+    <script src="index.js" type="module"></script>
+</body>
+
+</html>
